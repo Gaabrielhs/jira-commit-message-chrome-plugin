@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    #resultMessage {
+      transition: opacity 500ms;
+    }
+
+    .hide {
+      opacity: 0;
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  
+    body, .popup {
+      width: 200px;
+    }
+
+    button {
+      width: 200px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h3>JIRA For lazys</h3>
+    <span id="resultMessage" class="hide">Copied!</span>
+  </div>
+  <div>
+    <button id="commitMessage">Commit message</button>
+  </div>
+  <div>
+    <button id="branchName">Branch name</button>
+  </div>
+  <div>
+    <input type="checkbox" id="copyGitCommand">
+    <label for="copyGitCommand">With Git command?</label>
+  </div>
+</body>
+<script src="plugin.js" type="module"></script>
+
+</html>

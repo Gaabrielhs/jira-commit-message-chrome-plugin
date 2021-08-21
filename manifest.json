@@ -1,0 +1,16 @@
+{
+  "name": "jira-commit-message",
+  "version": "1.0.0",
+  "description": "Build a commit message based on the JIRA task",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["domManager.js"]
+    }
+  ],
+  "permissions": ["activeTab", "storage"],
+  "manifest_version": 3
+}
